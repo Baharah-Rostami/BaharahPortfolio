@@ -5,7 +5,11 @@
   --font-display: "urbanist", sans-serif;
   --color-primary: #8DFF69;
 }
-
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 8s linear infinite;
+  }
+}
 @layer base {
   html {
     font-family: var(--font-display);

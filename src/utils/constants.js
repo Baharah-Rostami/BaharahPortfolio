@@ -1,6 +1,7 @@
 export const personalInfo = {
   name: "Baharah Rostami",
   title: "React Developer",
+  location : "Herat-Afghanistan",
   email: "rostamibahara0@gmail.com",
   tagline: "Building modern and responsive web experiences",
   resume: "/resume.pdf",
@@ -14,12 +15,23 @@ export const socialLinks = {
   linkedin: "https://linkedin.com/in/baharah-rostami",
   twitter: "https://"
 };
-
 export const stats = [
- { projects: 4},
-  {experience: "1+ year"},
-  {technologies: 6},
-  {teamworkProjects: 1},
+  {
+    value: "4+",
+    label: "Projects",
+  },
+  {
+    value: "1+",
+    label: "Years Experience",
+  },
+  {
+    value: "6+",
+    label: "Technologies",
+  },
+  {
+    value: "1+",
+    label: "Team Projects",
+  },
 ];
 
 export const Nav_Links = [
