@@ -4,12 +4,25 @@ export const personalInfo = {
   location : "Herat-Afghanistan",
   email: "rostamibahara0@gmail.com",
   tagline: "Building modern and responsive web experiences",
-  resume: "/resume.pdf",
+  resume: "/src/utils/resume.docx",
   bio:[ "I am a frontend developer focused on building responsive and user-friendly web applications using React and Next.js. I enjoy turning ideas into clean and functional interfaces."
 
   ],
 };
-
+export const aboutStats = [
+  {
+    value: "4+",
+    label: "Completed Projects",
+  },
+  {
+    value: "1+",
+    label: "Years Learning",
+  },
+  {
+    value: "50+",
+    label: "GitHub Stars",
+  },
+];
 export const socialLinks = {
   github: "https://github.com/Baharah-Rostami",
   linkedin: "https://linkedin.com/in/baharah-rostami",
