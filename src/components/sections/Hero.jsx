@@ -9,7 +9,7 @@ import RadialGradiendbg from "../backgrounds/RadialGradiendbg";
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-black">
-      {/* <RadialGradiendbg variant= "hero"/> */}
+      <RadialGradiendbg variant= "hero"/>
 
       {/* content container  */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
@@ -72,8 +72,8 @@ export default function Hero() {
                   <div className="absolute -inset-0.5 bg-linear-to-r from-primary/20 via-primary/10 to-primary animate-spin-slow rounded-2xl"></div>
                 </div>
 
-                <div className="relative rounded-2xl overflow-hidden m-[1px] h-[calc(100%-2px)]">
-                  <img src="/public/images/Bahar-portrait.jpg" alt="developer portrait"
+                <div className="relative rounded-2xl overflow-hidden m-px h-[calc(100%-2px)]">
+                  <img src="/images/Bahar-portrait.jpg" alt="developer portrait"
                   className="w-full h-full object-cover" />
                 </div>
 
