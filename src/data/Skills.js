@@ -1,4 +1,4 @@
-const skills = [
+export const skills = [
   {
     id: 1,
     name: "HTML",
@@ -37,24 +37,30 @@ const skills = [
   },
   {
     id: 7,
-    name: "Git & GitHub",
+    name: "REST APIs",
     level: "Intermediate",
     experience: "1 year",
   },
   {
     id: 8,
-    name: "REST API",
+    name: "Git & GitHub",
+    level: "Intermediate",
+    experience: "1 year",
+  },
+  {
+    id: 9,
+    name: "Responsive Design",
     level: "Intermediate",
     experience: "6+ months",
   },
   {
-    id: 9,
+    id: 10,
     name: "Figma",
     level: "Beginner",
     experience: "6+ months",
   },
   {
-    id: 10,
+    id: 11,
     name: "Team Collaboration",
     level: "Intermediate",
     experience: "Project-based",
