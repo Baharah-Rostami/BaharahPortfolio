@@ -45,7 +45,7 @@ Feel free to connect with me:
 
 - Email: rostamibahara0@gmail.com
 - LinkedIn: Your LinkedIn Profile
-- GitHub: Your GitHub Profile
+- GitHub: https://github.com/Baharah-Rostami
 
 ## 🔗 Live Demo
 
