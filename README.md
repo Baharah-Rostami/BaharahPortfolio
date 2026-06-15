@@ -43,8 +43,8 @@ A travel-focused application built with Next.js that allows users to discover co
 
 Feel free to connect with me:
 
-- Email: rostamibahara0@gmail.com
-- LinkedIn: Your LinkedIn Profile
+- Email: baharrustami888@gmail.com
+- LinkedIn: https://www.linkedin.com/in/baharah-rostami-87b21a28a
 - GitHub: https://github.com/Baharah-Rostami
 
 ## 🔗 Live Demo
