@@ -38,7 +38,7 @@ export default function Contact() {
     };
     const socialIcons = {
         github: FaGithub,
-        linkdin: FaLinkedin,
+        linkedin: FaLinkedin,
         twitter: FaTwitter
     }
     return (
@@ -94,6 +94,59 @@ export default function Contact() {
                                     </div>
                                 )}
                             </form>
+                        </div>
+                    </FadeIn>
+
+                    <FadeIn delay={200}>
+                        <div className="space-y-8">
+                            <div>
+                                <h3 className="text-2xl font-semibold text-white mb-4">Let's Connect</h3>
+                                <p className="text-white/60 leading-relaxed"> Have a project in mind or want to collaborate? Feel free to reach out.
+                                    I'm always interested in building modern, responsive, and user-friendly web applications.</p>
+                            </div>
+                            <div className="space-y-4">
+                                <div className="group relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300">
+                                    <div className="flex items-start gap-4">
+                                        <div className="p-3 bg-linear-to-br from-primary/20 to-primary/20 border border-primary/30 rounded-3xl">
+                                            <Mail className="w-6 h-6 text-primary" />
+                                        </div>
+                                        <div className="flex-1">
+                                            <p className="text-sm text-white/60 mb-1">Email</p>
+                                            <a href={`mailto:${personalInfo.email}`}
+                                                className="text-white hover:text-[#A8FF8D] transition-colors font-medium ">
+                                                {personalInfo.email}
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="absolute inset-0 bg-linear-to-br from-primary/0 to-primary/0 group-hover:from-primary/5 group-hover:to-primary/5 rounded-3xl transition-all duration-300 pointer-events-none" />
+                                </div>
+
+                                <div className="group relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300">
+                                    <div className="flex items-start gap-4">
+                                        <div className="p-3 bg-linear-to-br from-primary/20 to-primary/20 border border-primary/30 rounded-3xl">
+                                            <MapPin className="w-6 h-6 text-primary" />
+                                        </div>
+                                        <div className="flex-1">
+                                            <p className="text-sm text-white/60 mb-1">Location</p>
+                                            <p className="text-white font-medium">{personalInfo.location}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p className="text-sm text-white/60 mb-4">Connect with me</p>
+                            <div className="flex gap-4">
+                                {Object.entries(socialLinks).slice(0, 3).map(([platform, url]) => {
+                                    const Icon = socialIcons[platform];
+                                    return Icon ? (
+                                        <a href={url} key={platform} target="_blank" rel="icon"
+                                            className="p-4 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 hover:border-primary/50 hover:scale-110 transition-all duration-300 group">
+                                            <Icon className="w-6 h-6 text-white/60 group-hover:text-primary transition-colors" />
+                                        </a>
+                                    ) : null;
+                                })}
+                            </div>
                         </div>
                     </FadeIn>
                 </div>
