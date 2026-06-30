@@ -2,31 +2,34 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 
 export default function useContactForm() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+    reset,
+  } = useForm();
+
   const [status, setStatus] = useState({
     type: "",
     message: "",
   });
 
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors, isSubmitting },
-  } = useForm();
-
   const onSubmit = async (data) => {
-    const formData = new FormData();
-
-    formData.append(
-      "access_key",
-      import.meta.env.VITE_WEB3FORMS_KEY
-    );
-
-    formData.append("name", data.name);
-    formData.append("email", data.email);
-    formData.append("message", data.message);
-
     try {
+      setStatus({
+        type: "",
+        message: "",
+      });
+
+      const formData = new FormData();
+
+      // Replace this with your own Web3Forms access key
+      formData.append("access_key", "YOUR_ACCESS_KEY");
+
+      formData.append("name", data.name);
+      formData.append("email", data.email);
+      formData.append("message", data.message);
+
       const response = await fetch(
         "https://api.web3forms.com/submit",
         {
@@ -47,10 +50,10 @@ export default function useContactForm() {
       } else {
         setStatus({
           type: "error",
-          message: "Something went wrong.",
+          message: result.message || "Something went wrong.",
         });
       }
-    } catch {
+    } catch (error) {
       setStatus({
         type: "error",
         message: "Failed to send message.",
